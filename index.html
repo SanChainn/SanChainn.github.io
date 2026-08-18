@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="San Chain Tun - AI / Machine Learning Engineer specializing in Generative AI, Computer Vision, RAG systems, and deep learning research. Ph.D. candidate at University of Miyazaki." />
+  <meta name="keywords" content="AI engineer, machine learning, computer vision, generative AI, LLM, RAG, deep learning, Ph.D., San Chain Tun" />
+  <meta property="og:title" content="San Chain Tun - AI / Machine Learning Engineer" />
+  <meta property="og:description" content="Generative AI, Computer Vision, RAG systems, and deep learning research." />
+  <meta property="og:type" content="website" />
+  <title>San Chain Tun | AI / Machine Learning Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129302;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/extras.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">SCT</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item nav__item--cta">
+          <a href="#contact" class="btn btn--small btn--primary">Collaborate</a>
+        </li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <svg class="icon icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting reveal">&#128075; Hi there, I'm</p>
+          <h1 class="hero__title reveal">San Chain Tun</h1>
+          <h2 class="hero__subtitle reveal">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero__description reveal">
+            Final-year Ph.D. candidate specializing in <strong>Multimodal Computer Vision</strong>,
+            <strong>LLM Systems</strong>, and <strong>Retrieval-Augmented Generation (RAG)</strong>.
+            I bridge cutting-edge research with enterprise-grade engineering &mdash; from GPU-accelerated
+            model training and TensorRT/ONNX optimization to production agentic backends built with
+            FastAPI, Qdrant, PostgreSQL, and Docker.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+          </div>
+
+          <div class="hero__socials reveal">
+            <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/san-chain-tun-8bb1aa179" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://doi.org/10.1038/s41598-026-40780-4" target="_blank" rel="noopener noreferrer" aria-label="Published research (Scientific Reports)" class="social-link">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </a>
+            <a href="mailto:sanchaintunucsy@gmail.com" aria-label="Email" class="social-link">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__avatar reveal">
+          <div class="avatar">
+            <div class="avatar__ring"></div>
+            <div class="avatar__inner">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar__svg" aria-label="Profile illustration">
+                <rect width="200" height="200" fill="none" />
+                <circle cx="100" cy="78" r="38" fill="url(#avatarGrad)" />
+                <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#avatarGrad)" />
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6366f1" />
+                    <stop offset="1" stop-color="#a855f7" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="avatar__badge avatar__badge--top">&#129302;</div>
+            <div class="avatar__badge avatar__badge--bottom">&#128300;</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+        <span class="hero__scroll-mouse"></span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">About Me</span>
+          <h2 class="section__title">Bridging research and production AI</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm an <strong>AI Systems Architect</strong> and final-year <strong>Ph.D. candidate</strong> at the
+              University of Miyazaki, Japan, specializing in Multimodal Computer Vision, LLM Systems, and
+              Retrieval-Augmented Generation. I have a proven track record of bridging cutting-edge scientific
+              research with robust, enterprise-grade software engineering.
+            </p>
+            <p>
+              My expertise spans GPU-accelerated model training, custom object tracking (PTA), fine-tuning
+              pretrained CNNs with ArcFace, frame-mix false-positive reduction, custom OCR architectures
+              (NRTR/CRNN), and TensorRT/ONNX optimizations &mdash; alongside architecting asynchronous
+              microservices with Python, FastAPI, Qdrant, PostgreSQL, PyTorch, and Docker.
+            </p>
+            <p>
+              I'm an extensively published author in top-tier international journals with impact factors up to
+              4.9, including a first-author paper in <strong>Nature Portfolio's Scientific Reports</strong>.
+            </p>
+
+            <ul class="about__facts">
+              <li><span>&#128205;</span> Miyazaki, Japan</li>
+              <li><span>&#127891;</span> Final-year Ph.D. Candidate</li>
+              <li><span>&#128218;</span> 8 Peer-Reviewed Publications</li>
+              <li><span>&#127760;</span> EN / JA / Burmese</li>
+            </ul>
+          </div>
+
+          <div class="about__stats reveal">
+            <div class="stat-card">
+              <span class="stat-card__value" data-count="6">0</span>
+              <span class="stat-card__suffix">+</span>
+              <span class="stat-card__label">Years in AI and Software</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value" data-count="8">0</span>
+              <span class="stat-card__suffix"></span>
+              <span class="stat-card__label">Peer-Reviewed Publications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value" data-count="5">0</span>
+              <span class="stat-card__suffix"></span>
+              <span class="stat-card__label">International Awards</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">4.9</span>
+              <span class="stat-card__suffix"></span>
+              <span class="stat-card__label">Highest Journal Impact Factor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Technical toolkit</h2>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#129504; Computer Vision and Deep Learning</h3>
+            <div class="skill-card__tags">
+              <span class="tag">YOLO (Detect / Segment / Keypoint)</span>
+              <span class="tag">Mask R-CNN</span>
+              <span class="tag">Detectron2</span>
+              <span class="tag">SAM3</span>
+              <span class="tag">ArcFace Loss</span>
+              <span class="tag">Metric Feature Matching</span>
+              <span class="tag">CNN Fine-tuning</span>
+              <span class="tag">Action Recognition (LSTM / RNN)</span>
+              <span class="tag">Tracking (PTA, DeepSORT, ByteTrack, SORT)</span>
+              <span class="tag">OCR (NRTR, CRNN)</span>
+              <span class="tag">Frame-Mix Filtering</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#10024; GenAI and LLM Systems</h3>
+            <div class="skill-card__tags">
+              <span class="tag">RAG Pipelines</span>
+              <span class="tag">Tool / Function Calling Agents</span>
+              <span class="tag">Vision-Language Models</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">Qdrant Vector Store</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Autonomous Agents</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#9881;&#65039; Backend and Architecture</h3>
+            <div class="skill-card__tags">
+              <span class="tag">Python (AsyncIO)</span>
+              <span class="tag">Clean Architecture</span>
+              <span class="tag">Dependency Injection</span>
+              <span class="tag">Repository Pattern</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Celery</span>
+              <span class="tag">SQLAlchemy 2 Async</span>
+              <span class="tag">Alembic</span>
+              <span class="tag">Nginx</span>
+              <span class="tag">MQTT / REST</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#128295; ML Systems and Tools</h3>
+            <div class="skill-card__tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">TensorRT</span>
+              <span class="tag">ONNX</span>
+              <span class="tag">CUDA / cuDNN GPU Clusters</span>
+              <span class="tag">Docker / Docker Compose</span>
+              <span class="tag">Edge Computing</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Git / GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#128187; Programming</h3>
+            <div class="skill-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Django</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 class="skill-card__title">&#127757; Languages</h3>
+            <div class="skill-card__tags">
+              <span class="tag">English (Professional)</span>
+              <span class="tag">Japanese (Conversational)</span>
+              <span class="tag">Burmese (Native)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience and Education ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Career</span>
+          <h2 class="section__title">Experience and education</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022.04 &mdash; Present</span>
+              <h3 class="timeline__title">AI and Computer Vision Researcher &middot; University of Miyazaki, Japan</h3>
+              <p class="timeline__text">
+                Train custom detection, segmentation, and keypoint models on GPU workstations; engineered the
+                Proposed Tracking Algorithm (PTA) against DeepSORT/ByteTrack/SORT; fine-tuned CNNs with ArcFace
+                for re-identification; built NRTR/CRNN OCR and LSTM action recognition; deployed real-time edge
+                inference via ONNX and TensorRT; mentor junior researchers.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019.11 &mdash; 2021.09</span>
+              <h3 class="timeline__title">Freelance Embedded and Software Engineer &middot; Self-Employed, Yangon</h3>
+              <p class="timeline__text">
+                Engineered full-stack IoT platforms (real-time flood warning, earthquake detection, automated
+                seeding) with Python, Django, and C++; integrated edge sensors with cloud backends via MQTT and
+                REST achieving 99.8% uptime; cut alert latency from minutes to under 3 seconds.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019.01 &mdash; 2019.11</span>
+              <h3 class="timeline__title">Robotics Coach and Curriculum Developer &middot; Engineering For Kids, Yangon</h3>
+              <p class="timeline__text">
+                Built student management and competition-tracking software plus an automated Messenger chatbot;
+                designed hands-on robotics/STEM curricula and coached national teams to the Best Innovative
+                Robot Award (WRO) and a Performance Award (WRG).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024.04 &mdash; Present</span>
+              <h3 class="timeline__title">Ph.D. in Computer Vision and AI &middot; University of Miyazaki (Thi Thi LAB)</h3>
+              <p class="timeline__text">
+                Research: multimodal cow lameness and identification system using computer vision and depth
+                cameras.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022.04 &mdash; 2024.03</span>
+              <h3 class="timeline__title">M.Eng. Energy and Electronics &middot; University of Miyazaki</h3>
+              <p class="timeline__text">
+                Thesis: cattle lameness detection using depth image analysis.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019.12 &mdash; 2021.12</span>
+              <h3 class="timeline__title">M.C.Tech. Embedded Systems &middot; University of Computer Studies, Yangon</h3>
+              <p class="timeline__text">
+                GPA: A- (qualified for Master's/Ph.D. track). Focus: embedded AI, IoT automation, distributed systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2014.12 &mdash; 2019.09</span>
+              <h3 class="timeline__title">B.C.Tech. First Class Honours &middot; University of Computer Studies, Thaton</h3>
+              <p class="timeline__text">
+                Focus: hardware automation, software engineering, image processing, and robotics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">Key projects and technical assignments</h2>
+        </div>
+
+        <div class="projects__filters reveal">
+          <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI Agents + RAG</button>
+          <button class="filter-btn" data-filter="vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="embedded">Embedded and IoT</button>
+        </div>
+
+        <div class="projects__grid" id="projects-grid">
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-card__media project-card__media--1">
+              <span class="project-card__emoji">&#129302;</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tech">
+                <span>FastAPI</span><span>Qdrant</span><span>PostgreSQL</span><span>Docker</span>
+              </div>
+              <h3 class="project-card__title">Agentic AI Backend and Multimodal Assistant</h3>
+              <p class="project-card__desc">
+                Multi-user Telegram AI assistant built on Clean Architecture (API, Services, Repositories,
+                Models) with async I/O. Extensible tool-calling registry lets LLMs (OpenRouter / OpenAI)
+                execute natural-language commands via OAuth 2.0. RAG engine with semantic chunking and Qdrant
+                search delivers sub-150 ms contextual answers. Full stack containerized: Nginx, Celery, Redis,
+                PostgreSQL, and secure HTTPS webhooks.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-card__media project-card__media--2">
+              <span class="project-card__emoji">&#128004;</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tech">
+                <span>PyTorch</span><span>TensorRT</span><span>ArcFace</span><span>NRTR/CRNN</span>
+              </div>
+              <h3 class="project-card__title">Multimodal Livestock Lameness and Biometric ID System</h3>
+              <p class="project-card__desc">
+                Ph.D. core research: automated computer vision pipeline combining top-view 3D depth sensors,
+                custom GPU-trained detectors, ArcFace metric fine-tuning, frame-mix filtering, NRTR/CRNN
+                ear-tag OCR, and the Proposed Tracking Algorithm (PTA). Optimized with ONNX and TensorRT for
+                real-time edge processing. Published as a first-author paper in Scientific Reports (Nature
+                Portfolio).
+              </p>
+              <div class="project-card__links">
+                <a href="https://doi.org/10.1038/s41598-026-40780-4" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                  Paper
+                </a>
+                <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-card__media project-card__media--3">
+              <span class="project-card__emoji">&#128065;</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tech">
+                <span>YOLO</span><span>LSTM</span><span>ONNX</span><span>Streamlit</span>
+              </div>
+              <h3 class="project-card__title">Computer Vision and Applied Deep Learning Suite</h3>
+              <p class="project-card__desc">
+                Face and body identification with ArcFace re-ID fused into custom PTA tracking to eliminate
+                ID-switches; custom NRTR/CRNN scene text recognition published at IEEE conferences; LSTM/RNN
+                temporal models for action recognition benchmarked against DeepSORT and ByteTrack; PyTorch to
+                ONNX/TensorRT export for low-latency multi-stream video; interactive classifier GUI built on
+                MobileNet_v2 and Streamlit.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="embedded">
+            <div class="project-card__media project-card__media--4">
+              <span class="project-card__emoji">&#128225;</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tech">
+                <span>Raspberry Pi</span><span>ESP8266</span><span>Django</span><span>C++</span>
+              </div>
+              <h3 class="project-card__title">Embedded Systems and Automation Platforms</h3>
+              <p class="project-card__desc">
+                Web-based real-time flood and earthquake warning dashboards using Python (Django), Raspberry
+                Pi 3, and ESP8266 edge devices with MQTT/REST cloud integration (99.8% uptime, alerts under 3
+                seconds); industrial automation modules for automated seeding, claw, packing, and stamping
+                machines powered by Raspberry Pi and C++.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Research</span>
+          <h2 class="section__title">Peer-reviewed publications</h2>
+        </div>
+
+        <h3 class="pub-group__title reveal">&#128218; Journal Articles</h3>
+        <div class="pub-list reveal">
+          <div class="pub-item">
+            <span class="pub-item__num">J1</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Cattle lameness detection using depth image and deep learning</p>
+              <p class="pub-item__authors">San Chain Tun, Pyke Tin, M. Aikawa, I. Kobayashi, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">Scientific Reports (Nature Portfolio)</span>
+                <span>vol. 16, 13456, 2026</span>
+                <span class="badge-if">IF 4.9</span>
+                <a class="pub-item__doi" href="https://doi.org/10.1038/s41598-026-40780-4" target="_blank" rel="noopener noreferrer">DOI: 10.1038/s41598-026-40780-4</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">J2</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Revolutionizing Cow Welfare Monitoring: A Novel Top-View Perspective with Depth Camera-Based Lameness Classification</p>
+              <p class="pub-item__authors">San Chain Tun, Tsubasa Onizuka, Pyke Tin, M. Aikawa, I. Kobayashi, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">Journal of Imaging (MDPI)</span>
+                <span>vol. 10(3), 67, 2024</span>
+                <span class="badge-if">IF 3.8</span>
+                <a class="pub-item__doi" href="https://doi.org/10.3390/jimaging10030067" target="_blank" rel="noopener noreferrer">DOI: 10.3390/jimaging10030067</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">J3</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Artificial Intelligence Fusion in Digital Transformation Techniques for Lameness Detection in Dairy Cattle</p>
+              <p class="pub-item__authors">Thi Thi Zin, Ye Min Htet, San Chain Tun, Pyke Tin</p>
+              <p class="pub-item__venue">
+                <span class="venue">Int'l Journal of Biomedical Soft Computing and Human Sciences</span>
+                <span>vol. 28(1), pp. 1&ndash;8, 2023</span>
+                <a class="pub-item__doi" href="https://doi.org/10.24466/ijbschs.28.1_1" target="_blank" rel="noopener noreferrer">DOI: 10.24466/ijbschs.28.1_1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pub-group__title reveal">&#127891; Conference Proceedings and Book Chapters</h3>
+        <div class="pub-list reveal">
+          <div class="pub-item">
+            <span class="pub-item__num">C1</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Robust Cow Detection and Tracking in Livestock Environments Using YOLOv8 and DeepSort with Depth Camera Fusion</p>
+              <p class="pub-item__authors">San Chain Tun, Pyke Tin, M. Aikawa, I. Kobayashi, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">19th ICICIC 2025</span>
+                <span>Kitakyushu, Japan &middot; Aug 2025</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">C2</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">An End-to-End Computer Vision Pipeline for Cow Ear Tag Number Recognition Using YOLOv11 and a Hybrid EfficientNet-NRTR Model</p>
+              <p class="pub-item__authors">San Chain Tun, Pyke Tin, Masaru Aikawa, Ikuo Kobayashi, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">IEEE 9th InCIT</span>
+                <span>Phuket, Thailand &middot; Nov 2025</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">C3</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Cattle Lameness Classification Using Cattle Back Depth Information</p>
+              <p class="pub-item__authors">San Chain Tun, Pyke Tin, Masaru Aikawa, Ikuo Kobayashi, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">ICGEC 2024 / Springer Book Chapter</span>
+                <span>Miyazaki, Japan &middot; Aug 2024</span>
+                <span class="badge-award">&#127942; Best Paper Award</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">C4</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Evaluating Imputation Strategies for Handling Missing Data: A Comparative Study</p>
+              <p class="pub-item__authors">Tunn Cho Lwin, San Chain Tun, Pyke Tin, Thi Thi Zin</p>
+              <p class="pub-item__venue">
+                <span class="venue">IEEE GCCE</span>
+                <span>Oct 2023</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-item__num">C5</span>
+            <div class="pub-item__body">
+              <p class="pub-item__title">Cow Lameness Detection Using Depth Image Analysis</p>
+              <p class="pub-item__authors">San Chain Tun, Thi Thi Zin, Pyke Tin, Ikuo Kobayashi</p>
+              <p class="pub-item__venue">
+                <span class="venue">IEEE GCCE</span>
+                <span>Oct 2022</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Awards ===== -->
+    <section class="section section--alt" id="awards">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Recognition</span>
+          <h2 class="section__title">Honors and awards</h2>
+        </div>
+
+        <div class="awards__grid">
+          <div class="award-card reveal">
+            <span class="award-card__icon">&#127942;</span>
+            <div>
+              <p class="award-card__title">Best Paper Award (2024)</p>
+              <p class="award-card__meta">16th Int'l Conference on Genetic and Evolutionary Computing (ICGEC), Miyazaki, Japan</p>
+            </div>
+          </div>
+          <div class="award-card reveal">
+            <span class="award-card__icon">&#129302;</span>
+            <div>
+              <p class="award-card__title">Best Innovative Robot Award (2020)</p>
+              <p class="award-card__meta">World Robot Olympiad (WRO) &mdash; coached national student team</p>
+            </div>
+          </div>
+          <div class="award-card reveal">
+            <span class="award-card__icon">&#129351;</span>
+            <div>
+              <p class="award-card__title">Performance Award (2020)</p>
+              <p class="award-card__meta">World Robot Game (WRG) &mdash; semi-final, water robot on Arduino</p>
+            </div>
+          </div>
+          <div class="award-card reveal">
+            <span class="award-card__icon">&#128161;</span>
+            <div>
+              <p class="award-card__title">Design and Innovative Award (2018)</p>
+              <p class="award-card__meta">APT Young Professionals and Students Robotic Competition, Myanmar</p>
+            </div>
+          </div>
+          <div class="award-card reveal">
+            <span class="award-card__icon">&#127891;</span>
+            <div>
+              <p class="award-card__title">First Class Honours (2019)</p>
+              <p class="award-card__meta">Bachelor of Computer Technology, University of Computer Studies, Myanmar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Let's work together</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p>
+              Whether it's a research collaboration, an AI product build, or a computer vision challenge
+              &mdash; my inbox is always open. I'll get back to you as soon as I can!
+            </p>
+
+            <div class="contact__channel">
+              <span class="contact__icon">&#9993;</span>
+              <div>
+                <span class="contact__label">Email</span>
+                <a href="mailto:sanchaintunucsy@gmail.com" class="contact__value">sanchaintunucsy@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__channel">
+              <span class="contact__icon">&#128222;</span>
+              <div>
+                <span class="contact__label">Phone</span>
+                <a href="tel:+817089866497" class="contact__value">+81 070-8986-6497</a>
+              </div>
+            </div>
+
+            <div class="contact__channel">
+              <span class="contact__icon">&#128205;</span>
+              <div>
+                <span class="contact__label">Location</span>
+                <span class="contact__value">Miyazaki, Japan</span>
+              </div>
+            </div>
+
+            <div class="contact__channel">
+              <span class="contact__icon">&#128187;</span>
+              <div>
+                <span class="contact__label">Social</span>
+                <span class="contact__value">
+                  <a href="https://github.com/SanChainn" target="_blank" rel="noopener noreferrer">GitHub</a> &middot;
+                  <a href="https://linkedin.com/in/san-chain-tun-8bb1aa179" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message &#128233;</button>
+            <p class="form__status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">
+        &copy; <span id="year"></span> San Chain Tun. Built with &#10084; and plain HTML/CSS/JS.
+      </p>
+      <a href="#hero" class="footer__top" aria-label="Back to top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
