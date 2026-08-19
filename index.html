@@ -101,17 +101,7 @@
           <div class="avatar">
             <div class="avatar__ring"></div>
             <div class="avatar__inner">
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar__svg" aria-label="Profile illustration">
-                <rect width="200" height="200" fill="none" />
-                <circle cx="100" cy="78" r="38" fill="url(#avatarGrad)" />
-                <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#avatarGrad)" />
-                <defs>
-                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#6366f1" />
-                    <stop offset="1" stop-color="#a855f7" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img src="assets/profile.jpg" alt="Portrait of San Chain Tun" class="avatar__img" width="304" height="304" decoding="async" />
             </div>
             <div class="avatar__badge avatar__badge--top">&#129302;</div>
             <div class="avatar__badge avatar__badge--bottom">&#128300;</div>
@@ -474,6 +464,30 @@
             </div>
           </article>
 
+          <article class="project-card reveal" data-category="vision">
+            <div class="project-card__media project-card__media--5">
+              <span class="project-card__emoji">&#127919;</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tech">
+                <span>Python</span><span>YOLO</span><span>ByteTrack</span><span>DeepSORT</span>
+              </div>
+              <h3 class="project-card__title">Multi-Object Tracking Benchmark: ByteTrack vs. DeepSORT</h3>
+              <p class="project-card__desc">
+                Testing framework that benchmarks ByteTrack and DeepSORT multi-object trackers on
+                real video streams. Pairs YOLO detections with both tracking pipelines in Python /
+                OpenCV to compare ID-switch behavior, tracking stability, and per-frame runtime
+                &mdash; with annotated video output for visual, side-by-side evaluation.
+              </p>
+              <div class="project-card__links">
+                <a href="https://github.com/SanChainn/Tracking_Testing_Bytetrack_Deepsort" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Code
+                </a>
+              </div>
+            </div>
+          </article>
+
           <article class="project-card reveal" data-category="embedded">
             <div class="project-card__media project-card__media--4">
               <span class="project-card__emoji">&#128225;</span>
@@ -543,7 +557,7 @@
             <span class="pub-item__num">J3</span>
             <div class="pub-item__body">
               <p class="pub-item__title">Artificial Intelligence Fusion in Digital Transformation Techniques for Lameness Detection in Dairy Cattle</p>
-              <p class="pub-item__authors">Thi Thi Zin, Ye Min Htet, San Chain Tun, Pyke Tin</p>
+              <p class="pub-item__authors">Thi Thi Zin, Ye Htet, San Chain Tun, Pyke Tin</p>
               <p class="pub-item__venue">
                 <span class="venue">Int'l Journal of Biomedical Soft Computing and Human Sciences</span>
                 <span>vol. 28(1), pp. 1&ndash;8, 2023</span>
