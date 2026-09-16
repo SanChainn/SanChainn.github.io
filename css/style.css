@@ -920,6 +920,10 @@ button {
   background: linear-gradient(135deg, #10b981, #22d3ee);
 }
 
+.project-card__media--7::before {
+  background: linear-gradient(135deg, #ef4444, #f59e0b);
+}
+
 .project-card__emoji {
   position: relative;
   z-index: 1;
